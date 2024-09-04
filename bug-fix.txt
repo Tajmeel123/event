@@ -1,0 +1,14 @@
+here try to fix bug which is push to github later 
+i am here ata second time 
+
+add another marketing message section
+add footer note
+third bug fix 
+fourth bug fix
+<<<<<<< HEAD
+>>>>>>> bug-fix 
+pink mode fix branch
+=======
+
+Another section added in this bug fix file 
+>>>>>>> e96ee59 (pink  mode commit)
