@@ -41,7 +41,7 @@
                         </div> --}}
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Comment Area</label>
-                            <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="6"></textarea>
+                            <textarea class="form-control" name="comment" id="exampleFormControlTextarea1" rows="6">{{ old('comment') }}</textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-outline-primary">Primary</button>

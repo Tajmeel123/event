@@ -158,7 +158,7 @@ class HomeController extends Controller
         $data = $request->comment;
 
         if ($this->containsBadWords($data)) {
-            return redirect()->back()->with('error', 'Your comment contains inappropriate language.');
+            return redirect()->back()->with('error', 'Your comment contains inappropriate language.')->withInput();
         }
         
         $comment = new Comments;
