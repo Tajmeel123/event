@@ -170,5 +170,10 @@ class HomeController extends Controller
         return redirect()->back()->with('success', 'Comment posted successfully.');
     }
 
+    public function placeAddress()
+    {
+        return view('address');
+    }
+
 
 }

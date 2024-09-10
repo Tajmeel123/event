@@ -7,6 +7,7 @@
                 <div class="card">
                     <div class="card-header">{{ __('messages.Dashboard') }}</div>
                     <div class="card-header"><a href="{{route('comment')}}">Comment</a></div>
+                    <div class="card-header"><a href="{{route('address')}}">Address</a></div>
                     <div class="card-body">
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">

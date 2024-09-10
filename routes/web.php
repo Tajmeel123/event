@@ -83,3 +83,4 @@ Route::get('list3-student', [HomeController::class, 'list3']);
 Route::get('list4-student', [HomeController::class, 'list4']);
 Route::get('comment', [HomeController::class, 'comment'])->name('comment');
 Route::post('comment-post', [HomeController::class, 'commentPost'])->name('comment-post');
+Route::get('place-address', [HomeController::class, 'placeAddress'])->name('address');
