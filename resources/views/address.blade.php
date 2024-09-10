@@ -26,7 +26,7 @@
                     @csrf
                     {{-- <input id="autocomplete" class="form-control m-2" placeholder="Enter your address" type="text" /> --}}
                     <input type="text" id="street_address" class="form-control m-2" placeholder="Street Address">
-                    <input type="text" id="house_building" class="form-control m-2" placeholder="House/Building">
+                    <input type="text" id="house_building" class="form-control m-2" placeholder="House or Building">
                     <input type="text" id="apartment_no" class="form-control m-2" placeholder="Apartment No.">
                     <input type="text" id="area_zone" class="form-control m-2" placeholder="Area/Zone">
                     <input type="text" id="state" class="form-control m-2" placeholder="State">
