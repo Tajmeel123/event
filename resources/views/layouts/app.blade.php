@@ -12,9 +12,21 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <style>
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 200;
+            height: 100vh;
+            margin: 0;
+            background-image: none;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -77,4 +89,13 @@
         </main>
     </div>
 </body>
+<script>
+    var botmanWidget = {
+        aboutText: 'Start the conversation with Hi',
+        introMessage: "✋ Hi! I'm form laravel event"
+    };
+</script>
+
+<script src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/widget.js'></script>
+  
 </html>

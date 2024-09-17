@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ChatBotController;
 use App\Models\Permission;
 use App\Models\Role;
 use App\Models\User;
@@ -53,7 +54,7 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect()->back();
 })->name('switch-language');
 
-Route::get('role-permissions', function(){
+Route::get('role-permissions', function () {
 
     // $admin = User::whereName('user')->with('roles')->first();
     // $adminRole = Role::whereName('user')->first();
@@ -63,7 +64,7 @@ Route::get('role-permissions', function(){
     // }
     // dd($admin->toArray());
 
-    $add_user_permission = Permission::where('name','add_user')->first();
+    $add_user_permission = Permission::where('name', 'add_user')->first();
     $admin_role = Role::whereName('admin')->with('permissions')->first();
     $admin_role->permissions()->attach($add_user_permission);
     dd($admin_role->toArray());
@@ -84,3 +85,6 @@ Route::get('list4-student', [HomeController::class, 'list4']);
 Route::get('comment', [HomeController::class, 'comment'])->name('comment');
 Route::post('comment-post', [HomeController::class, 'commentPost'])->name('comment-post');
 Route::get('place-address', [HomeController::class, 'placeAddress'])->name('address');
+
+//-------------ChatBot-----------------------//
+Route::match(['get', 'post'], '/botman', [ChatBotController::class, 'handle'])->name('botman');
